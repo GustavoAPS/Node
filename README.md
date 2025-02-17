@@ -79,6 +79,35 @@ In Node.js, there are built-in global objects and variables that are accessible 
 | `setInterval`  | Runs a function repeatedly at intervals |
 | `setImmediate` | Runs a function immediately after the current event loop |
 
+## 5.Events
+
+Node is:
+- Assynchronous
+- Event-driven
+
+This means that, the runtime implements an event loop, 
+
+It is important to know:
+- Events
+- Callback
+
+In most cases we will listen for events, and have a callback function for this event.
+
+## 6.File System
+
+## 7.Modules & NPM
+
+A module is a javascript file that exports it's code, 
+
+### NPM
+
+NPM (Node Package Manager) is the default package manager for Node.js. It is used to install, manage, and share JavaScript packages (also called modules or libraries) for both backend and frontend development.
+
+To create a new package.json file use the following command:
+
+```bash
+npm init -y
+```
 
 ## DOCS
 https://nodejs.org/docs/latest/api/
