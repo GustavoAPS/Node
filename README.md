@@ -27,9 +27,58 @@ nvm install 12.16.3
 
 ## 3.Hello World
 
-To create the most simple use case of node, we can do a hello world in repl mode, just type node in the terminal and console.log("Hello World"). Type Ctrl + c two times to quit.
+#### Repl Mode
 
-To create a hello world from a file we can create a index.js file that is the standard entrypoint for node and type console.log("Hello World"); 
+To create the most simple use case of node, we can do a hello world in ***repl*** mode, just type: 
+
+```bash
+node 
+```
+in the terminal and
+
+```js
+console.log("Hello World"). 
+```
+Type Ctrl + c two times to quit.
+
+#### From a File
+
+To make a hello world from a file, create a index.js file that is the standard entrypoint for node, in the file, write:
+
+```js
+console.log("Hello World"); 
+```
+
 To run this we can simply type node and the path to the file, but since this is the standard index.js we can only run node and the path to the current directory.
 
-global is 
+```sh
+node .
+```
+
+or for other cases, ex:
+
+```sh
+node app.js
+```
+
+## 4.Runtime
+
+In Node.js, there are built-in global objects and variables that are accessible anywhere without importing any module.
+
+
+| **Global**       | **Description** |
+|-----------------|----------------|
+| `global`       | The global object (similar to `window` in browsers) |
+| `__dirname`    | Directory path of the current script |
+| `__filename`   | Full path of the current script |
+| `process`      | Provides process information (PID, env variables, platform) |
+| `console`      | Built-in console for logging |
+| `require`      | Used for importing CommonJS modules |
+| `module`       | Contains information about the current module |
+| `setTimeout`   | Executes a function after a delay |
+| `setInterval`  | Runs a function repeatedly at intervals |
+| `setImmediate` | Runs a function immediately after the current event loop |
+
+
+## DOCS
+https://nodejs.org/docs/latest/api/
